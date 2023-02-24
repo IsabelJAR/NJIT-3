@@ -31,11 +31,13 @@ const vue_app = Vue.createApp({
       },
       data() {
         return {
-            // This holds your movies.json data.
-            movies: [],
-            /* ADD ADDITIONAL VARIABLES FOR STEP 3 HERE */
-         
-      }
+          // This holds your movies.json data.
+          movies: [],
+          /* ADD ADDITIONAL VARIABLES FOR STEP 3 HERE */
+          title: "IMDB + Isabel's Top 8 Movies",
+          owner: "Isabel",
+          github: "https://github.com/IsabelJAR/NJIT-3.git"
+        };
     },
       methods: {
             /* ADD FUNCTIONS/METHODS FOR STEP 7 HERE */
