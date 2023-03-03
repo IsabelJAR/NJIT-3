@@ -36,12 +36,12 @@ const vue_app = Vue.createApp({
           /* ADD ADDITIONAL VARIABLES FOR STEP 3 HERE */
           title: "IMDB + Isabel's Top 8 Movies",
           owner: "Isabel",
-          github: "https://github.com/IsabelJAR/NJIT-3.git",
+          github: "https://github.com/IsabelJAR/NJIT-3",
         };
     },
       methods: {
             /* ADD FUNCTIONS/METHODS FOR STEP 7 HERE */
-            //function to convert teh array to USA date order
+            //function to convert the array to USA date order
             getMonthText(dateArray){
                   switch (dateArray[1]) {
                     case 1:
@@ -81,22 +81,24 @@ const vue_app = Vue.createApp({
                       monthName = "December";
                       break;
                   }
-                  return monthName + ' ' + dateArray[2] + ', ' + dateArray[0];
+                  return monthName + ' ' + dateArray[2] + ', ' + dateArray[0]; //will load ex: December 12, 1987 into page
             },
+            // function to cycle through movie posters
             posterClick(index){
-              if (
-                this.movies[index].posterindex >= 
-                this.movies[index].posters.length - 1
-              ) {
+              //if you are on the last poster
+              if (this.movies[index].posterindex >= this.movies[index].posters.length - 1) {
+                //go back to the first poster
                 this.movies[index].posterindex = 0;
               } else {
+                //go to next poster then next poster
                 this.movies[index].posterindex++;
               }
             },
+            // function to convert minutes into hours with a remainder
             timeText(minutes){
-              var h = Math.floor(minutes / 60);
-              var min = minutes % 60;
-              return h + 'h ' + min + 'm';
+              var h = Math.floor(minutes / 60); // min/60 and then round to nearest whole number
+              var min = minutes % 60; // the remainder is equal to the minutes
+              return h + "h " + min + "m"; // will load #h #m into the page
             }
       }
 })
