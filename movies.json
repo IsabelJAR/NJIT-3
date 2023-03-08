@@ -68,5 +68,47 @@
             "likes": 812,
             "dislikes": 101,
             "posterindex": 0
+      },
+      {
+            "title": "Good Will Hunting",
+            "iscore": 8.3,
+            "rating": "R",
+            "runtime": 126,
+            "released": [1998, 1, 9],
+            "country": "USA",
+            "posters": ["img/goodwillhunting.jpg", "img/goodwillhunting2.jpg"],
+            "imdb": "https://www.imdb.com/title/tt0119217/?ref_=nv_sr_srsg_0",
+            "website": "https://www.miramax.com/movie/good-will-hunting/",
+            "likes": 921,
+            "dislikes": 103,
+            "posterindex": 0
+      },
+      {
+            "title": "As Good As It Gets",
+            "iscore": 7.7,
+            "rating": "PG-13",
+            "runtime": 139,
+            "released": [1997, 12, 25],
+            "country": "USA",
+            "posters": ["img/asgoodasitgets.png", "img/asgoodasitgets2.jpg"],
+            "imdb": "https://www.imdb.com/title/tt0119822/?ref_=fn_al_tt_1",
+            "website": "https://www.rottentomatoes.com/m/as_good_as_it_gets",
+            "likes": 789,
+            "dislikes": 117,
+            "posterindex": 0
+      },
+      {
+            "title": "Defiance",
+            "iscore": 7.1,
+            "rating": "R",
+            "runtime": 137,
+            "released": [2009, 1, 16],
+            "country": "USA",
+            "posters": ["img/defiance.jpg", "img/defiance2.jpg"],
+            "imdb": "https://www.imdb.com/title/tt1034303/?ref_=nv_sr_srsg_0",
+            "website": "https://www.rottentomatoes.com/m/defiance_2008",
+            "likes": 892,
+            "dislikes": 106,
+            "posterindex": 0
       }
 ]
